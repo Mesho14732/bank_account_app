@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Operations</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Create Bank Account Form -->
+    <div class="form-section" id="create-account">
+      <h2>Create Bank Account</h2>
+      <form>
+        <label for="account-name">Full Name:</label>
+        <input type="text" id="account-name" name="account-name" required>
+        
+        <label for="initial-deposit">Initial Balance:</label>
+        <input type="number" id="initial-deposit" name="initial-deposit" required>
+        
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+
+    <!-- Check Balance Form -->
+    <div class="form-section" id="check-balance">
+      <h2>Check Balance</h2>
+      <form>
+        <label for="account-number-balance">Account Number:</label>
+        <input type="text" id="account-number-balance" name="account-number-balance" required>
+        
+        <button type="submit">Check Balance</button>
+      </form>
+    </div>
+
+    <!-- Deposit Form -->
+    <div class="form-section" id="deposit">
+      <h2>Deposit</h2>
+      <form>
+        <label for="account-number-deposit">Account Number:</label>
+        <input type="text" id="account-number-deposit" name="account-number-deposit" required>
+
+        <label for="deposit-amount">Deposit Amount:</label>
+        <input type="number" id="deposit-amount" name="deposit-amount" required>
+        
+        <button type="submit">Deposit</button>
+      </form>
+    </div>
+
+    <!-- Transfer Form -->
+    <div class="form-section" id="transfer">
+      <h2>Transfer</h2>
+      <form>
+        <label for="from-account">From Account:</label>
+        <input type="text" id="from-account" name="from-account" required>
+
+        <label for="to-account">To Account:</label>
+        <input type="text" id="to-account" name="to-account" required>
+
+        <label for="transfer-amount">Transfer Amount:</label>
+        <input type="number" id="transfer-amount" name="transfer-amount" required>
+        
+        <button type="submit">Transfer</button>
+      </form>
+    </div>
+
+    <!-- Request Loan Form -->
+    <div class="form-section" id="request-loan">
+      <h2>Request Loan</h2>
+      <form>
+        <label for="account-number-loan">Account Number:</label>
+        <input type="text" id="account-number-loan" name="account-number-loan" required>
+
+        <label for="loan-amount">Loan Amount:</label>
+        <input type="number" id="loan-amount" name="loan-amount" required>
+        
+        <button type="submit">Request Loan</button>
+      </form>
+    </div>
+
+  </div>
+  <script src="./Bank.account.js"></script>
+</body>
+</html>
