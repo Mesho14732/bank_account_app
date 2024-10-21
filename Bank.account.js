@@ -61,6 +61,8 @@ let Bank = {
         return account;
     }
 };
+  
+
 //let create 2 user accounts
 let John = Bank.createAccount("John", 5000);
 let Dorcas =Bank.createAccount("Dorcas", 1000);
